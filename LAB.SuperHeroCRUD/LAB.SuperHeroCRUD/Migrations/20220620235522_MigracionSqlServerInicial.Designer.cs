@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace LAB.SuperHeroCRUD.Migrations
 {
-    [DbContext(typeof(EFContext))]
+    [DbContext(typeof(DBContext))]
     [Migration("20220620235522_MigracionSqlServerInicial")]
     partial class MigracionSqlServerInicial
     {

@@ -5,9 +5,9 @@ using System.Data;
 
 namespace LAB.SuperHeroCRUD.Persistence
 {
-    public class EFContext : DbContext, IApplicationDbContext
+    public class DBContext : DbContext, IApplicationDbContext
     {
-        public EFContext(DbContextOptions<EFContext> options) : base(options)
+        public DBContext(DbContextOptions<DBContext> options) : base(options)
         {
 
         }

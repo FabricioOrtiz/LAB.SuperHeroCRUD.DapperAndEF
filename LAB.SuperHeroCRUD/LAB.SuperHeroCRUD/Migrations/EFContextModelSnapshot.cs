@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace LAB.SuperHeroCRUD.Migrations
 {
-    [DbContext(typeof(EFContext))]
+    [DbContext(typeof(DBContext))]
     partial class EFContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
