@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "I/696G668zzTt/uIM/U7s4rApPJbxAdKkn36Dte17AuhBY8Pa+g7KCHKg8PiWpe+Hm3LoFxSv0s5R+2vgCDsWQ==",
+  "dgSpecHash": "L916PnF0Fty8exPKp0J6HNnmmWimXB2NvyHixro2WwzBfhniBMg0H9FdjJCjoxBWFDGDtbd4PEAz/SwCNW70WQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\fabri\\Documents\\GitHub\\LAB.SuperHeroCRUD.DapperAndEF\\LAB.SuperHeroCRUD\\LAB.SuperHeroCRUD\\LAB.SuperHeroCRUD.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\fabri\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
+    "C:\\Users\\fabri\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\fabri\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\fabri\\.nuget\\packages\\fluentvalidation\\11.0.1\\fluentvalidation.11.0.1.nupkg.sha512",
     "C:\\Users\\fabri\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.0.1\\fluentvalidation.aspnetcore.11.0.1.nupkg.sha512",
@@ -12,7 +14,7 @@
     "C:\\Users\\fabri\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
     "C:\\Users\\fabri\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\fabri\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
-    "C:\\Users\\fabri\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\fabri\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\fabri\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\fabri\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\fabri\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.6\\microsoft.entityframeworkcore.6.0.6.nupkg.sha512",

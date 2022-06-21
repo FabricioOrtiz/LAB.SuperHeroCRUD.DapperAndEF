@@ -21,6 +21,7 @@ builder.Services.AddScoped<IApplicationWriteDbConnection, ApplicationWriteDbConn
 builder.Services.AddScoped<IApplicationReadDbConnection, ApplicationReadDbConnection>();
 
 builder.Services.AddMediatR(typeof(NewSuperHero.Mediator).Assembly);
+builder.Services.AddAutoMapper(typeof(FindSuperHero.Mediator).Assembly);
 
 var app = builder.Build();
 
