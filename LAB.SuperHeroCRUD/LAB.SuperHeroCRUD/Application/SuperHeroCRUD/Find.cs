@@ -4,9 +4,9 @@ using LAB.SuperHeroCRUD.Persistence;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace LAB.SuperHeroCRUD.Application
+namespace LAB.SuperHeroCRUD.Application.SuperHeroCRUD
 {
-    public class FindSuperHero 
+    public class Find
     {
         //Se usa una clase para mapear los valores de entrada y salida
         public class ListSuperHero : IRequest<List<SuperHeroDTO>> { }

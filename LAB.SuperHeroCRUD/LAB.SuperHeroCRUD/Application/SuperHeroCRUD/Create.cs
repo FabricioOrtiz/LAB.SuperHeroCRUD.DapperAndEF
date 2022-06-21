@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using System.Data;
 using System.Data.Common;
 
-namespace LAB.SuperHeroCRUD.Application
+namespace LAB.SuperHeroCRUD.Application.SuperHeroCRUD
 {
-    public class NewSuperHero 
+    public class Create
     {
-        public class Execute : IRequest
+        public class SuperHero : IRequest
         {
             public int Id { get; set; }
             public string Name { get; set; }
@@ -18,20 +18,20 @@ namespace LAB.SuperHeroCRUD.Application
             public string Place { get; set; }
         }
 
-        public class Mediator : IRequestHandler<Execute>
+        public class Mediator : IRequestHandler<SuperHero>
         {
             public IApplicationDbContext _dbContext { get; }
             public IApplicationWriteDbConnection _writeDbConnection { get; }
             public Mediator(IApplicationDbContext dbContext, IApplicationWriteDbConnection writeDbConnection)
             {
                 _dbContext = dbContext;
-                _writeDbConnection = writeDbConnection; 
+                _writeDbConnection = writeDbConnection;
             }
 
-            public async Task<Unit> Handle(Execute request, CancellationToken cancellationToken)
+            public async Task<Unit> Handle(SuperHero request, CancellationToken cancellationToken)
             {
-                _dbContext.Connection.Open();    
-                using(var transaction = _dbContext.Database.BeginTransaction())
+                _dbContext.Connection.Open();
+                using (var transaction = _dbContext.Database.BeginTransaction())
                 {
                     try
                     {

@@ -1,4 +1,4 @@
-using LAB.SuperHeroCRUD.Application;
+using LAB.SuperHeroCRUD.Application.SuperHeroCRUD;
 using LAB.SuperHeroCRUD.Persistence;
 using LAB.SuperHeroCRUD.Persistence.Contract;
 using MediatR;
@@ -20,8 +20,9 @@ builder.Services.AddScoped<IApplicationDbContext>(provider => provider.GetServic
 builder.Services.AddScoped<IApplicationWriteDbConnection, ApplicationWriteDbConnection>();
 builder.Services.AddScoped<IApplicationReadDbConnection, ApplicationReadDbConnection>();
 
-builder.Services.AddMediatR(typeof(NewSuperHero.Mediator).Assembly);
-builder.Services.AddAutoMapper(typeof(FindSuperHero.Mediator).Assembly);
+builder.Services.AddMediatR(typeof(Create.Mediator).Assembly);
+builder.Services.AddAutoMapper(typeof(Find.Mediator).Assembly);
+builder.Services.AddAutoMapper(typeof(FindBy.Mediator).Assembly);
 
 var app = builder.Build();
 
