@@ -1,4 +1,6 @@
-﻿using System.Data;
+﻿
+
+using System.Data;
 
 namespace LAB.SuperHeroCRUD.Persistence.Contract
 {

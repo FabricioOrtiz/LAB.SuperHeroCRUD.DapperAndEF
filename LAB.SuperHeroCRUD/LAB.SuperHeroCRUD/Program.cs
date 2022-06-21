@@ -1,5 +1,7 @@
+using LAB.SuperHeroCRUD.Application;
 using LAB.SuperHeroCRUD.Persistence;
 using LAB.SuperHeroCRUD.Persistence.Contract;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,6 +19,8 @@ builder.Services.AddDbContext<DBContext>(options =>
 builder.Services.AddScoped<IApplicationDbContext>(provider => provider.GetService<DBContext>());
 builder.Services.AddScoped<IApplicationWriteDbConnection, ApplicationWriteDbConnection>();
 builder.Services.AddScoped<IApplicationReadDbConnection, ApplicationReadDbConnection>();
+
+builder.Services.AddMediatR(typeof(NewSuperHero.Mediator).Assembly);
 
 var app = builder.Build();
 
