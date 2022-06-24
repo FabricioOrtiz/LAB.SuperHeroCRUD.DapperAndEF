@@ -29,6 +29,7 @@ namespace LAB.SuperHeroCRUD.Application.SuperHeroCRUD
                     throw new Exception("the super hero not did not answer the call.!!!");
 
                 var superHeroDTO = _mapper.Map<SuperHero, SuperHeroDTO>(superHero);
+                string[] test = new string[5] { ;
                 return superHeroDTO;
             }
         }
